@@ -5,7 +5,7 @@
     </head>
     <body>
       <div id="hero"><h4 id="x9">X9 Intelligence</h4>
-      <h1 id="head">AI Marketing <span>for</span> SaaS Founders</h1>
+      <h1 id="head">AI Marketing <span>for</span><!--Name of site visitor--><span id="visitor">SaaS Founders</span></h1>
       <p id="intro">Stop spending months building products nobody sees. X9 Intelligence helps SaaS founders create content, attract users, and grow distribution.</p>
       <button class="waitlist" onclick="add()">Join Waitlist</button></div>
       <img src="https://cdnwebsite.databox.com/wp-content/uploads/2022/04/07045454/business-dashboard-software-hero.png">
@@ -49,6 +49,9 @@
     let email = prompt('What is your email?');
     alert(email + " has joined the waitlist");
 }
+          let name = document.getElementById("visitor")
+          let newName = prompt("What's your name?")
+          name.textContent = " " + newName + "'s SaaS"
       </script>
     </body>
 </html>
